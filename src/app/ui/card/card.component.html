@@ -1,0 +1,20 @@
+<div class="it">
+<div class="container">
+    <div class="row">
+       
+            @for (item of industries; track item.id)
+              {
+                <div class="col-3 py-3">
+                <div class="card " style="width: 18rem;">
+                    <img src={{item.image}} class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.title}}</h5>
+                      <p class="card-text">{{item.Description}}</p>
+                      <a href="#" class="btn btn-primary">See more</a>
+                    </div>
+                  </div>
+                </div> 
+              }   
+        </div>
+    </div>
+</div>
